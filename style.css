@@ -23,35 +23,131 @@ body{
     font-size: 14px;
     font-family: verdana;
 }
-.main-img{
+.main{
     width: 100%;
-    height: 400px;
+    height: 500px;
+    display: table;
     position: relative;
     text-align: center;
+    background: url('images/main.jpeg') no-repeat fixed;
+    background-size: cover;
 }
-.main-heading{
-    top: 100px;
-    width: 100%;
+.main-content{
+    top: 30%;
+    left: 30%;
     color: #fff;
+    position: absolute;
     font-family: verdana;
+    vertical-align: middle;
+    text-transform: capitalize;
+}
+.main-content h1{
     font-weight: bold;
-    position: absolute;
+    text-transform: uppercase;
     text-shadow: 5px 5px 10px #003366;
-    text-transform: capitalize;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
 }
-.main-text{
-    top: 150px;
-    width: 100%;
+.main-content p{
+    font-size: 1.5rem;
+    font-family: georgia;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+}
+.main-content a{
     color: #fff;
     font-family: verdana;
-    position: absolute;
+    background: #6495ed;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+}
+.main-content a:hover{
+    color: #fff;
+    background: #003366;
+}
+
+/* about section styling*/
+
+/* same style for section headers 
+    site-info and services  */
+#site-info-header, .service-header{
+    width: 100%;
+    color: #6495ed;
+    font-weight: bold;                      
+    padding: 5%;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+#site-info-header span, .service-header span{
+    color: #003366;
+}
+.site-video{
+    width: 100%;
+    height: auto;
+    border: solid transparent;
+}
+#site-content{
+    color: #696969;
+    font-family: calibri;
+}
+#sub-header{
+    color: #696969;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+iframe{
+    border: #6495ed solid;
+}
+#site-btn{
+    color: #fff;
+    background: #6495ed;
+}
+
+/* services corner styling*/
+
+.jumbotron{
+    margin-top: 10%;
+}
+.card{
+    box-shadow: 5px 5px 10px #696969;
+}
+#service-icon{
+    color: #6495ed;
+    padding: 10px;
+}
+.card-header{
+    width: 100%;
+    height: auto;
+    text-align: center;
     text-transform: capitalize;
 }
+.card-header h4{
+    color: #003366;
+    font-family: cambria;
+}
+.card-body{
+    width: 100%;
+    height: auto;
+    font-family: cambria;
+    border-bottom: #6495ed solid 5px;
+}
+
+
+
+
 
 /* media queries */
 @media(max-width: 768px){
     #main-links{
         margin-left: 0;
+    }
+    .info-col,.card{
+        padding: 6%;
+    }
+    iframe{
+        width: 100%;
     }
 }
 
