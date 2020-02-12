@@ -69,8 +69,9 @@ body{
 /* about section styling*/
 
 /* same style for section headers 
-    site-info and services  */
-#site-info-header, .service-header{
+    site-info, services and portfolio  */
+#site-info-header, .service-header, 
+.port-header{
     width: 100%;
     color: #6495ed;
     font-weight: bold;                      
@@ -79,7 +80,8 @@ body{
     text-align: center;
     text-transform: uppercase;
 }
-#site-info-header span, .service-header span{
+#site-info-header span, .service-header span, 
+.port-header span{
     color: #003366;
 }
 .site-video{
@@ -132,6 +134,25 @@ iframe{
     height: auto;
     font-family: cambria;
     border-bottom: #6495ed solid 5px;
+}
+
+/* portfolio section styling */
+.savy-port-tabs li a{
+    color: #003366;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.savy-port-tabs li a:hover{
+    color: #fff;
+    background-color: #6495ed;
+}
+.all-cont img{
+    width: 100%;
+    height: 250px;
+    padding-top: 5%;
+}
+.tab-content{
+    padding-top: 6%;
 }
 
 
